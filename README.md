@@ -40,7 +40,7 @@ Binary Analyzer is a comprehensive Binary Ninja plugin that provides in-depth an
 
 ### Installation Steps
 
-1. Clone the repo
+1. Clone the repo `git clone https://github.com/meerkatone/Binary-Analyser-Plugin-for-Binary-Ninja.git`
 
 2. Place the `binary_analyser_plugin.py` file in your Binary Ninja plugins directory:
    - Windows: `%APPDATA%\Binary Ninja\plugins`
