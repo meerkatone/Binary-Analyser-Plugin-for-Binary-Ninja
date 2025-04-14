@@ -46,7 +46,7 @@ Binary Analyzer is a comprehensive Binary Ninja plugin that provides in-depth an
    - Windows: `%APPDATA%\Binary Ninja\plugins`
    - Linux: `~/.binaryninja/plugins`
    - MacOS: `~/Library/Application Support/Binary Ninja/plugins`
-   - 
+
 3. Restart Binary Ninja or reload plugins
 
 4. Verify installation by checking that "Binary Analyser" appears in the plugins menu
