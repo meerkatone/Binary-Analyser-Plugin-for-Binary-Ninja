@@ -2,7 +2,7 @@
 
 ## Overview
 
-Binary Analyzer is a comprehensive Binary Ninja plugin that provides in-depth analysis and visualisation of binary files and directories. The plugin extracts key metrics, identifies dangerous function calls, and generates interactive dashboards to help security researchers and reverse engineers quickly assess binaries.
+Binary Analyser is a comprehensive Binary Ninja plugin that provides in-depth analysis and visualisation of binary files and directories. The plugin extracts key metrics, identifies dangerous function calls, and generates interactive dashboards to help security researchers and reverse engineers quickly assess binaries.
 
 ## Features
 
@@ -16,7 +16,7 @@ Binary Analyzer is a comprehensive Binary Ninja plugin that provides in-depth an
   - Count functions and strings
 
 - **Batch Analysis**:
-  - Analyze individual binaries or entire directories
+  - Analyse individual binaries or entire directories
   - Compare metrics across multiple binaries
   - Process and visualize results in a unified dashboard
 
@@ -82,7 +82,7 @@ To analyse all binaries in a directory:
 
 The generated dashboard provides:
 
-- **Summary metrics** across all analyzed binaries
+- **Summary metrics** across all analysed binaries
 - **Binary comparison charts** for entropy, cyclomatic complexity, and dangerous function references
 - **Detailed tables** with risk classifications and metrics
 - **Per-binary details** including segments, strings, and dangerous function references
