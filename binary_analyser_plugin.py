@@ -962,7 +962,7 @@ def analyse_directory(bv):
                     else:
                         log_error(f"Failed to load {binary_path}")
             except Exception as e:
-                log_error(f"Error analyzing {binary_path}: {str(e)}")
+                log_error(f"Error analysing {binary_path}: {str(e)}")
 
         # Save results and generate dashboard
         if successful > 0:
