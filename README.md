@@ -20,7 +20,7 @@ Binary Analyser is a comprehensive Binary Ninja plugin that provides in-depth an
   - Compare metrics across multiple binaries
   - Process and visualize results in a unified dashboard
 
-- **Interactive Visualization**:
+- **Interactive Visualisation**:
   - HTML dashboard with interactive charts
   - Entropy comparison charts and tables
   - Cyclomatic complexity visualization
