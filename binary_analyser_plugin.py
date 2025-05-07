@@ -97,7 +97,7 @@ class BinaryAnalyser:
                     })
         return xref_info
 
-    def analyze_binary(self, bv):
+    def analyse_binary(self, bv):
         """Analyse a single binary"""
         start_time = time.time()
 
@@ -876,7 +876,7 @@ def set_output_directory(bv):
         )
 
 
-def analyze_current_binary(bv):
+def analyse_current_binary(bv):
     """Analyse the currently open binary"""
     analyser = BinaryAnalyser()
 
@@ -886,7 +886,7 @@ def analyze_current_binary(bv):
             "Starting analysis of current binary..."
         )
 
-        result = analyser.analyze_binary(bv)
+        result = analyser.analyse_binary(bv)
         csv_file = analyser.save_results_to_csv()
         html_file = analyser.generate_dashboard()
 
@@ -921,11 +921,11 @@ def analyze_current_binary(bv):
         )
 
 
-def analyze_directory(bv):
+def analyse_directory(bv):
     """Analyse all binaries in a directory"""
     analyser = BinaryAnalyser()
 
-    # Get directory to analyze
+    # Get directory to analyse
     directory = interaction.get_directory_name_input("Select Directory with Binaries")
     if not directory:
         return
@@ -957,7 +957,7 @@ def analyze_directory(bv):
                 # Try to load the binary
                 with binaryninja.load(binary_path) as binary_view:
                     if binary_view:
-                        analyser.analyze_binary(binary_view)
+                        analyser.analyse_binary(binary_view)
                         successful += 1
                     else:
                         log_error(f"Failed to load {binary_path}")
@@ -972,7 +972,7 @@ def analyze_directory(bv):
             summary = f"""
             Analysis completed!
 
-            Successfully analyzed: {successful}/{len(binaries)} files
+            Successfully analysed: {successful}/{len(binaries)} files
             Results saved to: {csv_file}
             Dashboard saved to: {html_file}
             """
@@ -989,7 +989,7 @@ def analyze_directory(bv):
         else:
             interaction.show_message_box(
                 "Binary Analyser",
-                "No files were successfully analyzed."
+                "No files were successfully analysed."
             )
 
     except Exception as e:
@@ -1009,11 +1009,11 @@ PluginCommand.register(
 PluginCommand.register(
     "Binary Analyser\\Analyse Current Binary",
     "Analyse the currently loaded binary",
-    analyze_current_binary
+    analyse_current_binary
 )
 
 PluginCommand.register(
     "Binary Analyser\\Analyse Directory",
     "Analyse all binaries in a directory",
-    analyze_directory
+    analyse_directory
 )
